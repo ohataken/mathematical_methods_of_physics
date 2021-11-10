@@ -10,3 +10,5 @@
 %.pdf: %.dvi
 	docker run --rm -v $(CURDIR)/tmp:/workdir paperist/texlive-ja:alpine dvipdfmx $<
 
+clean:
+	rm tmp/*

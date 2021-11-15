@@ -22,7 +22,43 @@
 
 \paragraph{外微分}
 
-微分形式にはそれぞれ次数があって、微分1形式とか微分2形式とか呼ばれている。外微分は微分1形式から微分2形式を得る操作で、つまり微分$n$形式から微分$n+1$形式を得ることができる。あとで書く。
+関数を外微分すると、微分1形式になる。微分1形式を外微分すると、微分2形式になる。微分$n$形式を外微分すると微分$n+1$形式になる。
+
+関数$f(x,y)$があったとき、微分1形式は
+
+\begin{equation*}
+\begin{split}
+d \wedge f \\
+&= (\frac{\partial}{\partial x} dx + \frac{\partial}{\partial y} dy) \wedge f\\
+&= \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy
+\end{split}
+\end{equation*}
+
+となる。ここまでは全微分のように見える。この微分1形式をふたたび外微分すると、
+
+\begin{equation*}
+\begin{split}
+&d \wedge df \\
+&= d \wedge \frac{\partial f}{\partial x} dx + d \wedge \frac{\partial f}{\partial y} dy \\
+&= (\frac{\partial}{\partial x} dx + \frac{\partial}{\partial y} dy) \wedge \frac{\partial f}{\partial x} dx \\
+& \; \; \; + (\frac{\partial}{\partial x} dx + \frac{\partial}{\partial y} dy) \wedge \frac{\partial f}{\partial y} dy \\
+&= \frac{\partial}{\partial x} dx \wedge \frac{\partial f}{\partial x} dx 
++ \frac{\partial}{\partial y} dy \wedge \frac{\partial f}{\partial x} dx \\
+& \; \; \; + \frac{\partial}{\partial x} dx \wedge \frac{\partial f}{\partial y} dy 
++ \frac{\partial}{\partial y} dy \wedge \frac{\partial f}{\partial y} dy \\
+\end{split}
+\end{equation*}
+
+このあと紹介する交換法則をつかって計算を進めて、
+
+\begin{equation*}
+\begin{split}
+&= 0 + \frac{\partial}{\partial y} \frac{\partial f}{\partial x} dy \wedge dx \\
+& \; \; \; + \frac{\partial}{\partial x} \frac{\partial f}{\partial y} dx \wedge dy + 0 \\
+&= - \frac{\partial}{\partial y} \frac{\partial f}{\partial x} dx \wedge dy + \frac{\partial}{\partial x} \frac{\partial f}{\partial y} dx \wedge dy \\
+&= ( \frac{\partial}{\partial x} \frac{\partial f}{\partial y} - \frac{\partial}{\partial y} \frac{\partial f}{\partial x} ) dx \wedge dy
+\end{split}
+\end{equation*}
 
 \paragraph{交代性}
 

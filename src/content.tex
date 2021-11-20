@@ -18,7 +18,63 @@
 
 \hrulefill
 
-微分形式とは、まずは全微分だと思っておくことにする。ただし以下の計算ルールに従う必要はある。
+\paragraph{ウェッジ積}
+
+これから$ dx \wedge dy $みたいな式がたくさん出てくる。この山のような見た目の演算子をウェッジ積とよぶ。
+
+\paragraph{微分1形式}
+
+微分1形式は、こんな見た目をしている。ここまではふつうの全微分みたいだ。
+
+\begin{equation*}
+\begin{split}
+f dx + g dy + h dz
+\end{split}
+\end{equation*}
+
+微分1形式は曲線のほんのひと区画、線素をあらわす。
+
+\paragraph{微分2形式}
+
+微分2形式は、こんな見た目だ。
+
+\begin{equation*}
+\begin{split}
+f dx \wedge dy + g dy \wedge dz + h dz \wedge dx
+\end{split}
+\end{equation*}
+
+山のような形の中置演算子はウェッジ積という。ウェッジ積の演算はあとで書く。微分2形式は曲面のごく小さい区画、面積素をあらわす。
+
+\paragraph{微分3形式}
+
+微分3形式は、こんな見た目だ。
+
+\begin{equation*}
+\begin{split}
+f dx \wedge dy \wedge dz
+\end{split}
+\end{equation*}
+
+微分3形式は、体積のごく小さい区画、体積素をあらわす。
+
+\paragraph{微分n形式}
+
+微分n形式は、ここまでのことから類推したとおりのものだ。
+
+\begin{equation*}
+\begin{split}
+f dx_1 \wedge dx_2 \wedge ... \wedge dx_n
+\end{split}
+\end{equation*}
+
+ウェッジ積が中置演算子のせいで、和の記法のシグマ記号や、積の記法のパイ記号のようにきれいには書けない。ウェッジ積を中置の2項演算子ではなく、多変数関数のようにみたてて、こうやって書くこともある。
+
+\begin{equation*}
+\begin{split}
+f \wedge_{i=1}^{n} dx_i
+\end{split}
+\end{equation*}
 
 \paragraph{外微分}
 
